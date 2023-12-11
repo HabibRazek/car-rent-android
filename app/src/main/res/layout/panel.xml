@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/add">
+
+    <!-- Image in center -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/user_icon" />
+
+    <TextView
+        android:id="@+id/textLoggedUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="👋 Hi, User!"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLoggedUser"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue"
+        android:text="List of Cars"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_list"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue"
+        android:text="Add Your Car"
+        android:textColor="@android:color/white" />
+
+
+    <TextView
+        android:id="@+id/textViewWlcm"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAdd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="🚗 Welcome to Rent-A-Car!This app offers a range of services including adding cars to your list, viewing available cars, and booking the car of your choice🚗"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:padding="10dp"
+        />
+
+
+    <ImageButton
+        android:id="@+id/buttonExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWlcm"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/exit"
+        android:onClick="logout"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonExit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Log Out"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

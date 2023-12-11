@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "105584794467",
+    "project_id": "car-rent-47556",
+    "storage_bucket": "car-rent-47556.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105584794467:android:682adaf6802db8c95fd156",
+        "android_client_info": {
+          "package_name": "com.habib.car_rent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARSex074F6rcKmQBp8RmvzV2ow9k2aLUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

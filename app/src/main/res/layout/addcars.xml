@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/add">
+
+        <TextView
+            android:id="@+id/addCarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Add Car"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <ImageView
+            android:id="@+id/underlineImage"
+            android:layout_width="89dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/frame"
+            app:layout_constraintEnd_toEndOf="@id/addCarTitle"
+            app:layout_constraintStart_toStartOf="@id/addCarTitle"
+            app:layout_constraintTop_toBottomOf="@id/addCarTitle" />
+
+        <EditText
+            android:id="@+id/carMakeInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Make"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/underlineImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/carModelInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Model"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/carMakeInput"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/carDailyRateInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Daily Rate"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@id/carModelInput"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/carStatusInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Status"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/carDailyRateInput"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/carMileageInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Mileage"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@id/carStatusInput"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <EditText
+            android:id="@+id/carMapInput"
+            style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+            android:layout_width="288dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="4dp"
+            android:cursorVisible="false"
+            android:drawableStart="@drawable/pos"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:hint="Select Place"
+            android:inputType="none"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/carMileageInput" />
+
+        <ImageView
+            android:id="@+id/carImageView"
+            android:layout_width="354dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/uploadimg"
+            android:contentDescription="Car Image"
+
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/carMapInput" />
+
+        <Button
+            android:id="@+id/uploadImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/blue"
+            android:text="Upload Image"
+            app:layout_constraintTop_toBottomOf="@id/carImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/submitCarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/red"
+            android:text="Submit"
+            app:layout_constraintTop_toBottomOf="@id/uploadImageButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
